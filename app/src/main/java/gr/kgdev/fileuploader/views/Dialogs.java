@@ -1,12 +1,11 @@
-package gr.kgdev.fileuploader;
+package gr.kgdev.fileuploader.views;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.widget.EditText;
 
-public class DialogService {
+public class Dialogs {
 
     private static ProgressDialog LOADING_DIALOG = null;
 

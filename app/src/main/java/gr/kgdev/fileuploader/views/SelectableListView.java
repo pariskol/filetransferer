@@ -1,4 +1,4 @@
-package gr.kgdev.fileuploader;
+package gr.kgdev.fileuploader.views;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,6 +9,8 @@ import android.widget.ListView;
 import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
+
+import gr.kgdev.fileuploader.R;
 
 public class SelectableListView extends ListView {
 

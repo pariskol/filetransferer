@@ -1,4 +1,4 @@
-package gr.kgdev.fileuploader;
+package gr.kgdev.fileuploader.activities;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -20,9 +20,12 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import org.json.JSONObject;
 
+import gr.kgdev.fileuploader.AppCache;
+import gr.kgdev.fileuploader.R;
 import gr.kgdev.fileuploader.model.User;
 import gr.kgdev.fileuploader.utils.HttpClient;
 import gr.kgdev.fileuploader.utils.MyHttpClient;
+import gr.kgdev.fileuploader.views.Dialogs;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -65,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
             } catch (Throwable e) {
                Log.e(TAG, e.getMessage(), e);
-               this.runOnUiThread(() -> DialogService.showErrorDialog(LoginActivity.this, "Failed to login!"));
+               this.runOnUiThread(() -> Dialogs.showErrorDialog(LoginActivity.this, "Failed to login!"));
             } finally {
                 this.runOnUiThread(() -> this.loginButton.setActivated(false));
             }

@@ -1,4 +1,4 @@
-package gr.kgdev.fileuploader;
+package gr.kgdev.fileuploader.views;
 
 @FunctionalInterface
 public interface RunnbaleWithInput<T> {
